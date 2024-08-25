@@ -131,11 +131,7 @@ I have keen interest in Web development and am currently focusing on Full-Stack 
 Through my coursework and hands-on project,I've developed skills in Front-end Development and
 I'm passionate about Web development.</h4>
 </div>
-<div class="b">
-<center>
-<h3></h3>
-</center>
-</div>
+
 </div>
 </section>
 <br>
@@ -181,66 +177,9 @@ I have declare that the above information given by me is true to best of my Know
 <section id=contact>
 <footer>
   
-<link rel="stylesheet" href="styles.css">
-      <div class="contact-form">
-            <h2>Reach Out!</h2>
-            
-<form id="contactForm">
-                
-<label for="name">Name</label>
 
-                
-<input type="text" id="name" name="name"  required>
-
-  
-              <label for="email">Email Address</label>
-                
-<input type="email" id="email" name="email"  required>
-
- 
-               <label for="message">Message</label>
-               
- <textarea id="message" name="message" placeholder="What is the issue?" required></textarea>
-
-
-                <button type="submit">Submit</button>
-                            </form>
-           
-         </div>
-    
-
-    <script>
-document.getElementById('contactForm').addEventListener('submit', function(event) 
-{
-    event.preventDefault(); 
-    const name = document.getElementById('name').value;
-    
-    const email = document.getElementById('email').value;
-   
-     const message = document.getElementById('message').value;
-
-    
-   
-     //alert("Thank you, Your message has been received.");
- 
-  if (name&&email&&message) 
-{
- 
-          alert('Thank you, Your message has been received.');
-               
-       
- document.getElementById('contactForm').reset();  } 
-       else {
-        alert('Please fill in all fields.');
-  
-  }
-       
-    
-});</script></footer></section>
-
-<body>
-</html>
-body {
+<style>
+contact-form {
     font-family: Arial, sans-serif;
 
     background-color: #f4f4f4;
@@ -364,4 +303,62 @@ width: 100%;
 {
     background-color: #555;
 }
+</style>
+      <div class="contact-form">
+            <h2>Reach Out!</h2>
+            
+<form id="contactForm">
+                
+<label for="name">Name</label>
 
+                
+<input type="text" id="name" name="name"  required>
+
+  
+              <label for="email">Email Address</label>
+                
+<input type="email" id="email" name="email"  required>
+
+ 
+               <label for="message">Message</label>
+               
+ <textarea id="message" name="message" placeholder="What is the issue?" required></textarea>
+
+
+                <button type="submit">Submit</button>
+                            </form>
+           
+         </div>
+    
+
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(event) 
+{
+    event.preventDefault(); 
+    const name = document.getElementById('name').value;
+    
+    const email = document.getElementById('email').value;
+   
+     const message = document.getElementById('message').value;
+
+    
+   
+     //alert("Thank you, Your message has been received.");
+ 
+  if (name&&email&&message) 
+{
+ 
+          alert('Thank you, Your message has been received.');
+               
+       
+ document.getElementById('contactForm').reset();  } 
+       else {
+        alert('Please fill in all fields.');
+  
+  }
+       
+    
+});</script></footer></section>
+
+<body>
+</html>
